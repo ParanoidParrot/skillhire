@@ -6,6 +6,8 @@ import FreelancerListPage from "./pages/FreelancerListPage";
 import FreelancerProfilePage from "./pages/FreelancerProfilePage";
 import BookingPage from "./pages/BookingPage";
 import DashboardPage from "./pages/DashboardPage";
+import DashboardBookingsPage from "./pages/DashboardBookingsPage";
+import DashboardProfilePage from "./pages/DashboardProfilePage";
 import AdminDashboardPage from "./pages/AdminDashboardPage";
 
 const AppRoutes = () => (
@@ -17,6 +19,8 @@ const AppRoutes = () => (
     <Route path="/freelancer/:id" element={<FreelancerProfilePage />} />
     <Route path="/booking/:id" element={<BookingPage />} />
     <Route path="/dashboard" element={<DashboardPage />} />
+    <Route path="/dashboard/bookings" element={<DashboardBookingsPage />} />
+    <Route path="/dashboard/profile" element={<DashboardProfilePage />} />
     <Route path="/admin" element={<AdminDashboardPage />} />
   </Routes>
 );
